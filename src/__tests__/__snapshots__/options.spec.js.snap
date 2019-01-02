@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Options /> should render correctly 1`] = `
+Array [
+  <option
+    value="English"
+  >
+    English
+  </option>,
+  <option
+    value="Spanish"
+  >
+    Spanish
+  </option>,
+  <option
+    value="German"
+  >
+    German
+  </option>,
+  <option
+    value="French"
+  >
+    French
+  </option>,
+]
+`;

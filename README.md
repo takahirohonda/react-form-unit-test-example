@@ -4,7 +4,8 @@ Example of unit testing React form with Jest and Enzyme
 This is a simple React form unit test example. On submit, it pops up an alert that displays values from the form. Using yarn as a package manager.
 
 Testing examples include:
-- Snapshot testing on stateless components
+- Snapshot testing on stateless component
+- Testing props on stateless component
 - Text input change handler testing
 - Multi Select change handler testing
 - Checkbox change handler testing
@@ -14,6 +15,8 @@ Testing examples include:
 - [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html)
 - [React Form](https://reactjs.org/docs/forms.html)
 - [Test Utilities](https://reactjs.org/docs/test-utils.html)
+- [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react)
+- [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
 ## Running Test
 ```bash
