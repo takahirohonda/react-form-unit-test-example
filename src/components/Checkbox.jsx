@@ -25,7 +25,6 @@ CheckBox.defaultProps = {
     checked: false,
     handleChange: function(){},
     label: 'CheckBox'
-
 }
 
 export default CheckBox

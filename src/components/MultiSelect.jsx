@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const MultiSelect = (props) => {
     return (
@@ -9,6 +10,22 @@ const MultiSelect = (props) => {
             </select>
         </div>
     )
+}
+
+MultiSelect.propTypes = {
+    className: PropTypes.string,
+    labelFor: PropTypes.string,
+    value: PropTypes.array,
+    handleChange: PropTypes.func,
+    label: PropTypes.string
+};
+
+MultiSelect.defaultProps = {
+    className: 'form-group',
+    labelFor: 'checkbox',
+    value: [],
+    handleChange: function(){},
+    label: 'MultiSelect'
 }
 
 export default MultiSelect;

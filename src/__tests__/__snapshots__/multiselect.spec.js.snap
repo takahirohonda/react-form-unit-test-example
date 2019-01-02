@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MultiSelect /> Should render correctly 1`] = `
+<div>
+  <label
+    htmlFor="checkbox"
+  >
+    MultiSelect
+  </label>
+  <select
+    className="form-group"
+    id="checkbox"
+    multiple={true}
+    name="checkbox"
+    onChange={[Function]}
+    value={Array []}
+  />
+</div>
+`;
