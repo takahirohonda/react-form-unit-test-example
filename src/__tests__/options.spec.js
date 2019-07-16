@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import Options from '../components/options';
+import Options from '../components/Options';
 import React from 'react';
 import { mount } from 'enzyme';
 import enzymeConfig from '../../enzymeConfig'
