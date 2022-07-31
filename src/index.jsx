@@ -1,9 +1,9 @@
-import ReactDom from 'react-dom';
-import React from 'react';
-import App from './App';
-import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import ReactDom from 'react-dom'
+import React from 'react'
+import App from './App'
+import 'bootstrap/dist/css/bootstrap.css'
 
 ReactDom.render(
-    <App />,
-    document.getElementById('react')
+  <App />,
+  document.getElementById('react'),
 )

@@ -1,19 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const Options = (props) => {
-    var element = props.options.map((item, index) => {
-        return <option key={index} value={item}>{item}</option>
-    })
-    return element
+const Options = ({ options }) => {
+  const element = options.map((item) => <option key={item} value={item}>{item}</option>)
+  return element
 }
 
 Options.propTypes = {
-    options: PropTypes.array
-};
+  options: PropTypes.arrayOf(PropTypes.string),
+}
 
 Options.defaultProps = {
-    options: []
-};
+  options: [],
+}
 
-export default Options;
+export default Options

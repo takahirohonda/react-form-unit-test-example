@@ -1,12 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-const Jumbotron = (props) => {
-    return (
-        <div className='jumbotron'>
-            {props.children}
-        </div>
-    )
-    
-}
+const Jumbotron = ({ children }) => (
+  <div className="jumbotron">
+    {children}
+  </div>
+)
 
-export default Jumbotron;
+export default Jumbotron
