@@ -56,14 +56,58 @@ class Form extends React.Component {
     } = this.state
     return (
       <form onSubmit={this.handleSubmit}>
-        <TextInput labelFor="firstname" label="Firstname" className="form-control" type="text" name="firstname" id="firstname" value={firstname} handleChange={this.handleChange} />
-        <TextInput labelFor="lastname" label="Lastname" className="form-control" type="text" name="lastname" id="lastname" value={lastname} handleChange={this.handleChange} />
-        <TextInput labelFor="email" label="E-mail" className="form-control" type="email" name="email" id="email" value={email} handleChange={this.handleChange} />
-        <MultiSelect labelFor="languages" label="Languages" className="form-control mb-3" value={languages} handleChange={this.handleMultiSelect}>
+        <TextInput
+          labelFor="firstname"
+          label="Firstname"
+          className="form-control"
+          type="text"
+          name="firstname"
+          id="firstname"
+          value={firstname}
+          handleChange={this.handleChange}
+        />
+        <TextInput
+          labelFor="lastname"
+          label="Lastname"
+          className="form-control"
+          type="text"
+          name="lastname"
+          id="lastname"
+          value={lastname}
+          handleChange={this.handleChange}
+        />
+        <TextInput
+          labelFor="email"
+          label="E-mail"
+          className="form-control"
+          type="email"
+          name="email"
+          id="email"
+          value={email}
+          handleChange={this.handleChange}
+        />
+        <MultiSelect
+          labelFor="languages"
+          label="Languages"
+          className="form-control mb-3"
+          value={languages}
+          handleChange={this.handleMultiSelect}
+        >
           <Options options={languageList} />
         </MultiSelect>
-        <Checkbox labelFor="subscribed" label="Subscribe" checked={subscribed} className="form-check mb-3 text-right" handleChange={this.handleChange} />
-        <Button type="submit" className="btn btn-primary form-control">Submit</Button>
+        <Checkbox
+          labelFor="subscribed"
+          label="Subscribe"
+          checked={subscribed}
+          className="form-check mb-3 text-right"
+          handleChange={this.handleChange}
+        />
+        <Button
+          type="submit"
+          className="btn btn-primary form-control"
+        >
+          Submit
+        </Button>
 
       </form>
     )
