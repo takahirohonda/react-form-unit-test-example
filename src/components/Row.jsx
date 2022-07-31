@@ -1,7 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-const Row = (props) => {
-    return <div className="row">{props.children}</div>
+const Row = ({ children }) => <div className="row">{children}</div>
+
+Row.propTypes = {
 }
 
-export default Row;
+export default Row

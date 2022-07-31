@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-const Button = (props) => {
-    const Tag = props.href? 'a':'button';
-    return <Tag {...props} />
+const Button = ({ href, children }) => {
+  const Tag = href ? 'a' : 'button'
+  return <Tag href={href}>{children}</Tag>
 }
 
-export default Button;
+export default Button

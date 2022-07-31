@@ -1,16 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-const Column = (props) => {
-    return <div className={props.className}>{props.children}</div>
-}
+const Column = ({ className, children }) => (
+  <div className={className}>{children}</div>
+)
 
 Column.propTypes = {
-    className: PropTypes.string
-};
+  className: PropTypes.string,
+}
 
 Column.defaultProps = {
-    className: 'col-md-6 offset-md-3'
-};
+  className: 'col-md-6 offset-md-3',
+}
 
-export default Column;
+export default Column
