@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 import Form from '../components/Form'
 
 describe('<Form>', () => {
-  it('Should capture firstname correctly onChange', () => {
+  it('Should capture first name correctly onChange', () => {
     const component = mount(<Form />)
     const input = component.find('input').at(0)
     input.instance().value = 'hello'
@@ -11,7 +11,7 @@ describe('<Form>', () => {
     expect(component.state().firstname).toEqual('hello')
   })
 
-  it('Should capture lastname correctly onChange', () => {
+  it('Should capture last name correctly onChange', () => {
     const component = mount(<Form />)
     const input = component.find('input').at(1)
     input.instance().value = 'world'
@@ -76,7 +76,7 @@ describe('<Form>', () => {
       languages: ['English', 'French'],
       subscribed: true,
     }
-    const expectedArg = 'Firstname: hello, Lastname: world, Email: hello@world.com, Language: English,French, Subscribed: Yes'
+    const expectedArg = 'First Name: hello, Last Name: world, Email: hello@world.com, Language: English,French, Subscribed: Yes'
     const component = mount(<Form />)
     window.alert = jest.fn()
     component.setState(state)

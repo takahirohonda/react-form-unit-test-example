@@ -25,6 +25,7 @@ class Form extends React.Component {
     const { name } = target
     const value = target.type === 'checkbox' ? target.checked : target.value
     this.setState({ [name]: value }, () => {
+      /* eslint-disable-next-line no-console */
       console.log(name)
     })
   }
@@ -42,7 +43,8 @@ class Form extends React.Component {
       subscribed,
     } = this.state
     const subscribedText = subscribed ? 'Yes' : 'No'
-    alert(`Firstname: ${firstname}, Lastname: ${lastname}, Email: ${email}, Language: ${languages}, Subscribed: ${subscribedText}`)
+    /* eslint-disable-next-line no-alert */
+    alert(`First Name: ${firstname}, Last Name: ${lastname}, Email: ${email}, Language: ${languages}, Subscribed: ${subscribedText}`)
   }
 
   render() {
@@ -58,7 +60,7 @@ class Form extends React.Component {
       <form onSubmit={this.handleSubmit}>
         <TextInput
           labelFor="firstname"
-          label="Firstname"
+          label="First Name"
           className="form-control"
           type="text"
           name="firstname"
@@ -68,7 +70,7 @@ class Form extends React.Component {
         />
         <TextInput
           labelFor="lastname"
-          label="Lastname"
+          label="Last Name"
           className="form-control"
           type="text"
           name="lastname"
@@ -78,7 +80,7 @@ class Form extends React.Component {
         />
         <TextInput
           labelFor="email"
-          label="E-mail"
+          label="Email"
           className="form-control"
           type="email"
           name="email"
