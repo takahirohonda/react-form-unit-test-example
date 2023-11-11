@@ -30,6 +30,8 @@ yarn add -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser es
 yarn add tailwindcss postcss autoprefixer -D
 # then run config. -p is for adding postcss.config.js
 npx tailwindcss init -p
+# Add clsx for managing class names
+yarn add clsx
 
 # Add material UI
 yarn add @mui/base
@@ -42,3 +44,6 @@ yarn add react-hook-form
 
 [Material Tailwind - Input] (https://www.material-tailwind.com/docs/html/input)
 [Tailwind Flex] (https://tailwindcss.com/docs/flex)
+[clsx npm](https://www.npmjs.com/package/clsx)
+
+- Install Tailwind CSS IntelliSense extension on VS code.

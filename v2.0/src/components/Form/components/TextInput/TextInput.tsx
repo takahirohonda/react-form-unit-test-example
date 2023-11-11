@@ -1,5 +1,6 @@
 import { forwardRef } from 'react'
 import { UseFormRegister } from 'react-hook-form'
+import clsx from 'clsx'
 
 import {
   TextInputProps,
@@ -18,15 +19,20 @@ export const TextInputHookForm = ({
   name,
   label,
   register,
+  hasError,
 }: TextInputWithRegister) => (
   <div className="flex flex-col">
-    <label htmlFor={name} className="text-blue-800">
+    <label htmlFor={name} className="text-gray-800">
       {label}
     </label>
     <input
       {...register(name)}
       id={name}
-      className="border border-gray-300 rounded"
+      className={clsx(
+        hasError ? 'border-red-500' : 'border-gray-300',
+        'border',
+        'rounded'
+      )}
     />
   </div>
 )
