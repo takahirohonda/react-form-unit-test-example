@@ -5,6 +5,7 @@ import { FormValues } from '../../Form.types'
 export interface TextInputProps {
   label: string
   name: keyof FormValues
+  hasError?: boolean
 }
 
 export interface TextInputWithRegister extends TextInputProps {

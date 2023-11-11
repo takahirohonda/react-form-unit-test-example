@@ -22,19 +22,34 @@ export const Form = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="flex flex-col gap-16px">
-        <TextInputHookForm
-          register={register}
-          name="firstName"
-          label="First Name"
-        />
-        {errors.firstName && <p>First name is required.</p>}
-        <TextInputHookForm
-          register={register}
-          name="lastName"
-          label="Last Name"
-        />
-        {errors.lastName && <p>Last name is required</p>}
-        <button type="submit">Submit</button>
+        <div className="flex flex-col gap-2">
+          <TextInputHookForm
+            register={register}
+            name="firstName"
+            label="First Name"
+            hasError={!!errors.firstName}
+          />
+          {errors.firstName && (
+            <span className="text-red-500">First name is required.</span>
+          )}
+        </div>
+        <div className="flex flex-col gap-2">
+          <TextInputHookForm
+            register={register}
+            name="lastName"
+            label="Last Name"
+            hasError={!!errors.lastName}
+          />
+          {errors.lastName && (
+            <span className="text-red-500">Last name is required</span>
+          )}
+        </div>
+        <button
+          type="submit"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Submit
+        </button>
       </div>
     </form>
   )
