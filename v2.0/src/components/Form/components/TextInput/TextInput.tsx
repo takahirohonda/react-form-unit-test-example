@@ -20,8 +20,14 @@ export const TextInputHookForm = ({
   register,
 }: TextInputWithRegister) => (
   <div className="flex flex-col">
-    <label htmlFor={name}>{label}</label>
-    <input {...register(name)} id={name} />
+    <label htmlFor={name} className="text-blue-800">
+      {label}
+    </label>
+    <input
+      {...register(name)}
+      id={name}
+      className="border border-gray-300 rounded"
+    />
   </div>
 )
 

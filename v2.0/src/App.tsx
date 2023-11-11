@@ -3,7 +3,8 @@ import { Header } from './components/Header'
 
 export const App = () => (
   <div className="container mx-auto">
-    <div className="mx-16px">
+    {/* gap not working  */}
+    <div className="mx-16px flex-col gap-4">
       <Header />
       <div className="md:max-w-md">
         <Form />

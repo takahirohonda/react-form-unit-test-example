@@ -2,8 +2,6 @@
 
 ## In progress...
 
-## Reference
-
 ## Installation
 
 1. Installing React
@@ -36,6 +34,11 @@ npx tailwindcss init -p
 # Add material UI
 yarn add @mui/base
 
-# Add react hook form & zod. @hookform/resolvers is used for zod validation within react-hook-form.
-yarn add react-hook-form zod @hookform/resolvers
+# Add react hook form
+yarn add react-hook-form
 ```
+
+## Docs
+
+[Material Tailwind - Input] (https://www.material-tailwind.com/docs/html/input)
+[Tailwind Flex] (https://tailwindcss.com/docs/flex)
