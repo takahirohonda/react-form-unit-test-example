@@ -36,6 +36,6 @@ npx tailwindcss init -p
 # Add material UI
 yarn add @mui/base
 
-# Add react hook form
-yarn add react-hook-form
+# Add react hook form & zod. @hookform/resolvers is used for zod validation within react-hook-form.
+yarn add react-hook-form zod @hookform/resolvers
 ```
